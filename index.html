@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yusuf Vhora — Full Stack Web Developer (Laravel & PHP). MCA student building modern, secure, and scalable web applications." />
+    <meta name="theme-color" content="#090d17" />
+    <title>Yusuf Vhora — Full Stack Web Developer</title>
+    <script>
+      // Avoid a flash of the wrong theme before React hydrates.
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.classList.remove('dark', 'light');
+        document.documentElement.classList.add(t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
